@@ -1,12 +1,36 @@
-<body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-  <h1>My Astro Site</h1>
-  <h1>About Me</h1>
-  <h2>... and my new Astro site!</h2>
-
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-</body>
+---
+const pageTitle = "About Me";
+const identity = {
+  firstName: "まい",
+  country: "日本",
+  occupation: "Web制作アシスタント",
+  hobbies: ["ゲームをすること", "お絵かき", "映画鑑賞"],
+};
+const skills = ["HTML", "CSS", "JavaScript", "TailwindCSS", "Astro"];
+---
+<html lang="en">
+  <head>
+    <meta charset ="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
+    <h2>...and my new Astro site!</h2>
+    <p>About me:</p>
+    <ul>
+      <li>私の名前は、{identity.firstName}です。</li>
+      <li>私は {identity.country} に住んでいます。 {identity.occupation}として働いています。</li>
+      {identity.hobbies.length >= 2 && 
+        <li>趣味は {identity.hobbies[0]}、{identity.hobbies[1]}、 {identity.hobbies[2]}です。</li>
+      } 
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+  </body>
+</html>
