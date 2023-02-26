@@ -21,19 +21,3 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
 }
-header {
-  text-align: right;
-  padding: 5px;
-}
-nav a {
-  line-height: 2rem;
-  margin-right: 10px;
-}
-nav a:hover {
-  opacity: 0.7;
-  border-bottom: 1px solid #333;
-  transition: all 0.5s ease 0s;
-}
-.main-content {
-  text-align: center;
-}
