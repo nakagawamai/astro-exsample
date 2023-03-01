@@ -1,66 +1,12 @@
-<header class="nav-links">
-  <nav>
+---
+import Hamburger from './Hamburger.astro';
+import Navigation from './Navigation.astro';
+---
+<header>
+  <Hamburger /> 
+  <Navigation>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
-  </nav>
+  <Navigation />
 </header>
-
-<style>
-header {
-  text-align: right;
-  padding: 5px;
-}
-nav a {
-  line-height: 2rem;
-  margin-right: 10px;
-}
-nav a:hover {
-  transition: all 0.2s ease 0s;
-}
-
-/* nav styles */
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-}
-
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.nav-links a:hover, a:focus {
-  transition: all 0.2s ease 0s;
-  background-color: #ff9776;
-  color: #ffffff;
-}
-
-.expanded {
-  display: unset;
-}
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-}
-</style>
