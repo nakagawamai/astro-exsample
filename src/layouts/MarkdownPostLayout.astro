@@ -3,20 +3,30 @@ import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 <Layout>
-<h1>{frontmatter.title}</h1>
-<p class="author-name">Written by {frontmatter.author}</p>
+<h1> {frontmatter.title}</h1>
+<p>{frontmatter.pubDate.slice(0,10)}</p>
+<p><em>{frontmatter.description}</em></p>
+<img src={frontmatter.image.url} width="100%" alt={frontmatter.image.alt} />
 <slot />
+<div class="author">
+  <img src={frontmatter.authorimage} width="80" alt={frontmatter.image.alt} />
+  <p>Written by: {frontmatter.author}</p>
+</div>
 </Layout>
+
 
 <style>
 h1{
   text-align:left;
 }
-.author-name{
+.author{
   font-size: 0.8rem;
   text-align:center;
   width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
+
+}
+.author img{
+  border-radius:100px;
 }
 </style>
