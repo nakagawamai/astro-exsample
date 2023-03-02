@@ -1,6 +1,8 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: My Second Blog Post
-author: Astro Learner
+author: Mai Nakagawa
+authorimage: 'https://mai.kosodante.com/wp-content/uploads/2022/06/cropped-llCIoDum_400x400.jpg'
 description: "After learning some Astro, I couldn't stop!"
 image: 
     url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"

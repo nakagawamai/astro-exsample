@@ -1,17 +1,16 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Blog Post'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+author: 'Mai Nakagawa'
+authorimage: 'https://mai.kosodante.com/wp-content/uploads/2022/06/cropped-llCIoDum_400x400.jpg'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'The Astro logo with the word One.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-# My First Blog Post
-
-Published on: 2023-02-23
+## Welcome to my blog!
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 

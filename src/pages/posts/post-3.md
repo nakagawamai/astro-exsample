@@ -1,6 +1,8 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: My Third Blog Post
-author: Astro Learner
+author: Mai Nakagawa
+authorimage: 'https://mai.kosodante.com/wp-content/uploads/2022/06/cropped-llCIoDum_400x400.jpg'
 description: "I had some challenges, but asking in the community really helped!"
 image: 
     url: "https://astro.build/assets/blog/community-day/cover.jpg"
