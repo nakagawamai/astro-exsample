@@ -1,0 +1,22 @@
+---
+import Layout from './Layout.astro';
+const { frontmatter } = Astro.props;
+---
+<Layout>
+<h1>{frontmatter.title}</h1>
+<p class="author-name">Written by {frontmatter.author}</p>
+<slot />
+</Layout>
+
+<style>
+h1{
+  text-align:left;
+}
+.author-name{
+  font-size: 0.8rem;
+  text-align:center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+</style>
